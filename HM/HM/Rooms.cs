@@ -169,7 +169,6 @@ namespace HM
             {
                 Key = Convert.ToInt32(RoomsDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
-
         }
 
         private void EditBtn_Click(object sender, EventArgs e)

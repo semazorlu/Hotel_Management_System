@@ -66,6 +66,35 @@ namespace HM
 
         }
 
+        private void EditCategorie()
+        {
+            if (TypeNameTb.Text == "" || CostTb.Text == "")
+            {
+                MessageBox.Show("Missing Information!!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+
+                    SqlCommand cmd = new SqlCommand("update TypeTbl set TypeName=@TN,TypeCost=@TC where TypeNum = @TKey", Con);  
+                    cmd.Parameters.AddWithValue("@TN", TypeNameTb.Text);
+                    cmd.Parameters.AddWithValue("@TC", CostTb.Text);
+                    cmd.Parameters.AddWithValue("@TKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category Updated!!");
+
+                    Con.Close();
+                    populate();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             InsertCategories();
@@ -76,6 +105,60 @@ namespace HM
             Rooms Obj = new Rooms();
             Obj.Show();
             this.Hide();
+        }
+
+        int Key = 0;
+
+        private void TypesDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TypeNameTb.Text = TypesDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CostTb.Text = TypesDGV.SelectedRows[0].Cells[2].Value.ToString();
+
+            if (TypeNameTb.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(TypesDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            EditCategorie();
+        }
+
+        private void DeleteCategory()
+        {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select a Category!!");
+            }
+            else
+            {
+                try
+                {
+                    Con.Open();
+
+                    SqlCommand cmd = new SqlCommand("delete from TypeTbl where TypeNum = @TKey", Con);
+                    cmd.Parameters.AddWithValue("@TKey", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category Deleted!!");
+
+                    Con.Close();
+                    populate();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            DeleteCategory();
         }
     }
 }

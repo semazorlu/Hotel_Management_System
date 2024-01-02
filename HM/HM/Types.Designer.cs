@@ -141,6 +141,7 @@
             this.label7.Size = new System.Drawing.Size(132, 32);
             this.label7.TabIndex = 6;
             this.label7.Text = "Bookings";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -163,6 +164,7 @@
             this.label5.Size = new System.Drawing.Size(150, 32);
             this.label5.TabIndex = 4;
             this.label5.Text = "Customers";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label2
             // 
@@ -184,6 +186,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(211, 112);
             this.panel3.TabIndex = 1;
+            this.panel3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseClick);
             // 
             // label1
             // 

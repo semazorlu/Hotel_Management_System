@@ -154,5 +154,33 @@ namespace HM
         {
             EditCustomer();
         }
+
+        private void panel3_MouseClick(object sender, MouseEventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Types Obj = new Types();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Rooms Obj = new Rooms();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Bookings Obj = new Bookings();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

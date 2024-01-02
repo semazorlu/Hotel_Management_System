@@ -100,3 +100,5 @@ C:\Users\Sema Nur Zorlu\Desktop\GitHub\Visual_Programming_Project\HM\HM\obj\Debu
 C:\Users\Sema Nur Zorlu\Desktop\GitHub\Visual_Programming_Project\HM\HM\obj\Debug\HM.csproj.CopyComplete
 C:\Users\Sema Nur Zorlu\Desktop\GitHub\Visual_Programming_Project\HM\HM\obj\Debug\HM.exe
 C:\Users\Sema Nur Zorlu\Desktop\GitHub\Visual_Programming_Project\HM\HM\obj\Debug\HM.pdb
+C:\Users\Sema Nur Zorlu\Desktop\GitHub\Visual_Programming_Project\HM\HM\obj\Debug\HM.AdminLogin.resources
+C:\Users\Sema Nur Zorlu\Desktop\GitHub\Visual_Programming_Project\HM\HM\obj\Debug\HM.Login.resources

@@ -248,5 +248,33 @@ namespace HM
                 Key = Convert.ToInt32(BookingDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void panel3_MouseClick(object sender, MouseEventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Types Obj = new Types();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Rooms Obj = new Rooms();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Customers Obj = new Customers();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

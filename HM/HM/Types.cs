@@ -160,5 +160,26 @@ namespace HM
         {
             DeleteCategory();
         }
+
+        private void panel3_MouseClick(object sender, MouseEventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Customers Obj = new Customers();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Bookings Obj = new Bookings();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

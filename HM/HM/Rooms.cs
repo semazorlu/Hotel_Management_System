@@ -124,7 +124,7 @@ namespace HM
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -184,6 +184,37 @@ namespace HM
         private void label4_Click(object sender, EventArgs e)
         {
             Types Obj = new Types();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void panel3_MouseClick(object sender, MouseEventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Customers Obj = new Customers();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Bookings Obj = new Bookings();
             Obj.Show();
             this.Hide();
         }

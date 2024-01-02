@@ -197,5 +197,12 @@ namespace HM
             Obj.Show();
             this.Hide();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Dashboard Obj = new Dashboard();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

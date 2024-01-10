@@ -53,6 +53,9 @@
             this.TypesDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.TypeNameTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -203,6 +206,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.CostTb);
             this.panel2.Controls.Add(this.SaveBtn);
             this.panel2.Controls.Add(this.DeleteBtn);
@@ -367,6 +373,36 @@
             this.TypeNameTb.TabIndex = 1;
             this.TypeNameTb.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(913, 217);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(98, 25);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "TypeCost";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(470, 217);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 25);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "TypeName";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(38, 217);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 25);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "TypeNum";
+            // 
             // Types
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -415,5 +451,8 @@
         private Guna.UI2.WinForms.Guna2TextBox TypeNameTb;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI2.WinForms.Guna2TextBox CostTb;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

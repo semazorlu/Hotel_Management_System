@@ -57,6 +57,11 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.UserDGV)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -259,6 +264,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.PasswordTb);
             this.panel2.Controls.Add(this.GenderCb);
             this.panel2.Controls.Add(this.UphoneTb);
@@ -430,6 +440,56 @@
             this.bunifuElipse2.ElipseRadius = 25;
             this.bunifuElipse2.TargetControl = this;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(1101, 217);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(112, 25);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "UPassword";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(834, 217);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(91, 25);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "UGender";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(575, 217);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(83, 25);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "UPhone";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(321, 217);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(78, 25);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "UName";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(78, 217);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(67, 25);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "UNum";
+            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -483,5 +543,10 @@
         private Guna.UI2.WinForms.Guna2TextBox UphoneTb;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTb;
         private System.Windows.Forms.ComboBox GenderCb;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
     }
 }

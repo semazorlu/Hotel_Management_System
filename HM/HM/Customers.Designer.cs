@@ -54,6 +54,10 @@
             this.CustomersDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.CnameTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -226,6 +230,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.phoneTb);
             this.panel2.Controls.Add(this.GenderCb);
             this.panel2.Controls.Add(this.SaveBtn);
@@ -383,6 +391,46 @@
             this.CnameTb.Size = new System.Drawing.Size(257, 48);
             this.CnameTb.TabIndex = 1;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label13.Location = new System.Drawing.Point(996, 217);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(118, 25);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "CustGender";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(676, 217);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 25);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "CustPhone";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(361, 217);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 25);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "CustName";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(57, 217);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 25);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "CustNum";
+            // 
             // Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -430,5 +478,9 @@
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox CnameTb;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label11;
     }
 }
